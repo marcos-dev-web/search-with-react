@@ -1,0 +1,17 @@
+
+.body_search {
+  width: 100%;
+  min-height: 100px;
+}
+
+.header_names {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.container_products {
+  width: 100%;
+}

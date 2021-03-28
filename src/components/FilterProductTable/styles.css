@@ -1,0 +1,4 @@
+.container_main {
+  width: min(300px, 90vw);
+  margin: 0 auto;
+}
