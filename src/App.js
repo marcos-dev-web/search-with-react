@@ -3,6 +3,8 @@ import React from 'react';
 import FilterProductTable from './components/FilterProductTable';
 
 function App() {
+  
+  // you can get data from an API
   const products = [
     {
       category: "Sporting Goods",
