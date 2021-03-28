@@ -1,5 +1,5 @@
 import React from "react";
-import {nanoid} from 'nanoid';
+import {nanoid} from 'nanoid'; // to generate an unique ID
 
 import "./styles.css";
 
@@ -31,7 +31,7 @@ function ProductTable({products: list, onlyStock: onlyInStock}) {
             {
               onlyInStock ? (
                 categories[cat].map((item) => item.stocked && (
-                  <ProductRow name={item.name} price={item.price} key={nanoid()} color={!item.stocked ? "red" : "black"}/>
+                  <ProductRow name={item.name} price={item.price} key={nanoid()} color={"black"}/>
                 ))
               ) : (
                 categories[cat].map((item) => (
