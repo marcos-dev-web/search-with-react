@@ -12,8 +12,9 @@ function SearchBar({handleStock, handleSearch}) {
   }
 
   function handleSearchBox(event) {
-    handleSearch(event.target.value);
-    setSearchBoxValue(event.target.value);
+    const value = event.target.value;
+    handleSearch(value.trim());
+    setSearchBoxValue(value);
   }
   
   return (
@@ -21,7 +22,7 @@ function SearchBar({handleStock, handleSearch}) {
       <input value={searchBoxValue} onChange={handleSearchBox} type="search" className="search_input" placeholder="Search..."/>
       <div className="checkbox">
         <input type="checkbox" onChange={handleChecked} checked={checked} id="checkbox"/>
-        <label htmlFor="checkbox">Only show products in stock</label>
+        <label htmlFor="checkbox">Only products in stock</label>
       </div>
     </header>
   );

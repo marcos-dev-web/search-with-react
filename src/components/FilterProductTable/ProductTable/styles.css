@@ -2,6 +2,9 @@
 .body_search {
   width: 100%;
   min-height: 100px;
+  background: rgb(49, 53, 61);
+  padding: 0.5rem;
+  border-radius: 3px;
 }
 
 .header_names {
@@ -9,9 +12,33 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 0;
+  height: 2rem;
+  border-bottom: 1px solid rgb(0, 102, 255);
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(52, 57, 66);
+  flex: 1;
+  height: 100%;
+}
+
+.header_names span {
+  width: 1px;
+  height: 100%;
+  background: rgb(0, 102, 255);
 }
 
 .container_products {
   width: 100%;
+  background: rgb(52, 57, 66);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  max-height: 50vh;
+  overflow: auto;
 }

@@ -22,7 +22,7 @@ function ProductTable({products: list, onlyStock: onlyInStock}) {
     <div className="body_search">
       <div className="header_names">
         <strong className="title">Name</strong>
-
+        <span></span>
         <strong className="title">Price</strong>
       </div>
       <div className="container_products">
@@ -31,11 +31,11 @@ function ProductTable({products: list, onlyStock: onlyInStock}) {
             {
               onlyInStock ? (
                 categories[cat].map((item) => item.stocked && (
-                  <ProductRow name={item.name} price={item.price} key={nanoid()} color={"black"}/>
+                  <ProductRow name={item.name} price={item.price} key={nanoid()} color={"#79ff7e"}/>
                 ))
               ) : (
                 categories[cat].map((item) => (
-                  <ProductRow name={item.name} price={item.price} key={nanoid()} color={!item.stocked ? "red" : "black"}/>
+                  <ProductRow name={item.name} price={item.price} key={nanoid()} color={!item.stocked ? "#d84242" : "#79ff7e"}/>
                 ))
               )
             }
